@@ -1,0 +1,21 @@
+# Euclid's greatest common divisor algorithm
+
+# ask user for an integer greater than zero
+answer1 = input("Give me a number")
+# store it in n
+n = int(answer1)
+# ask user for an integer greater than zero
+answer2 = input("Give me another number")
+# store it in m
+m = int(answer2)
+# while n and m are different: 
+while n != m:
+    # if n is greater than m:
+    if n > m: 
+        # let n be n - m
+        n = n - m
+    # otherwise:
+    else:
+        # let m be m - n
+        m = m-n
+print "Their greatest common divisor is", n
